@@ -1,0 +1,12 @@
+.taskList{
+    width:70%;
+    justify-self: center;
+    
+}
+.task{
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}

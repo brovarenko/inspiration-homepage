@@ -3,7 +3,7 @@ import styles from './Quote.module.css';
 
 const Quote = () => {
     return (
-        <div>Quotes</div>
+        <div className={styles.quote}>Quotes</div>
     )
 }
 

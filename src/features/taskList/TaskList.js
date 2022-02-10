@@ -1,11 +1,15 @@
 import React from "react";
+import styles from './TaskList.module.css';
+import { useSelector } from 'react-redux';
+import { selectTask } from './taskListSlice';
 
-const list = ["name1", "name2", "name3", "name4"];
 
 const TaskList = () => {
-    return(
-        <div>
-        {list.map((e,i)=><div key={i}>{e}</div>)}
+    const task = useSelector(selectTask);
+
+    return (
+        <div className={styles.taskList}>
+        {task.map((e,i)=><div className={styles.task} key={i}>{e}</div>)}
         </div>
     )
 };
