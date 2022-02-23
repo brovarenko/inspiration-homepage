@@ -12,9 +12,10 @@ const Weather = () => {
 
     useEffect(() => {
             dispatch(getWeatherAsync());
+            
         },[dispatch]
     );
-        console.log(status)
+        
     if (!status) {
         return <div>...Loading</div>;
     }
@@ -23,7 +24,10 @@ const Weather = () => {
 
     return (
         <div className={styles.weather}>
-            {weatherData.temp}
+        <img src={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} alt="weather icon"/>
+           <div>{(weatherData.temp - 273.15).toFixed(1)}℃</div> 
+           <div>{weatherData.description}</div> 
+            
         </div>
     );
 }

@@ -1,6 +1,33 @@
-.quote{
-    align-self: end;
-    width:70%;
-    justify-self: center;
-    padding: 20px;
+.quote {
+    font-size: 1.3rem;
+}
+.animation {
+  animation: a1 3s;
+}
+@keyframes a1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.author {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.quoteConteiner {
+  display: grid;
+  justify-content: center;
+  border-radius: 5px;
+
+  align-self: end;
+  width: 70%;
+  justify-self: center;
+  padding: 20px;
+}
+.quoteConteiner:hover {
+  cursor:pointer;
 }
