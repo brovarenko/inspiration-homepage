@@ -11,7 +11,7 @@ const InputBar = () => {
     const addTaskHandler = (e) => {
         e.preventDefault();
         if (task === "") return;
-        dispatch(addTask({ text:task,id:uuidv4() }));
+        dispatch(addTask({ text:task,id:uuidv4(),isDone: false }));
         setTask('');
     };
     return(

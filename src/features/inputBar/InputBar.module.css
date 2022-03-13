@@ -1,7 +1,9 @@
 input{
     font-size: 30px;
-    width: 70%;
+    width: 68%;
     justify-self: center;
     border-radius: 5px;
     margin: 15px 0;
+    border: none;
+    
 }

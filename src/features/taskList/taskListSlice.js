@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    task:[],
+    task:[
+       
+    ],
   };
 
 const taskSlice = createSlice({
@@ -13,12 +15,16 @@ const taskSlice = createSlice({
         },
         removeTask: (state, action) => {
             state.task = state.task.filter(e => e.id !== action.payload);
+        },
+        finishTask:(state, action) => {
+            state.task.map(e =>  { if (e.id === action.payload) e.isDone = !e.isDone });
+        
         }
     }
 
 });
 
-export const { addTask, removeTask } =  taskSlice.actions;
+export const { addTask, removeTask, finishTask } =  taskSlice.actions;
 
 export const selectTask = (state) => state.task.task;
 
