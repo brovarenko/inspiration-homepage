@@ -1,5 +1,5 @@
 .quote {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .animation {
   animation: a1 3s;
@@ -17,12 +17,10 @@
   padding: 10px;
   font-size: 1.1rem;
 }
-
 .quoteConteiner {
   display: grid;
   justify-content: center;
   border-radius: 5px;
-
   align-self: end;
   width: 70%;
   justify-self: center;

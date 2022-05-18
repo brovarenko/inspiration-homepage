@@ -1,0 +1,16 @@
+.control {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+.btn-control:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px #FFFFFF;
+}
+.btn-control {
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #55555559;
+}
