@@ -18,4 +18,4 @@ Users can write down their goals<br>
 Users can delete goals<br>
 Users can mark goals as complete<br>
 
-
+![img](https://github.com/brovarenko/inspiration-homepage/raw/main/public/inst-ing.jpg)
